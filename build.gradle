@@ -4,10 +4,6 @@ plugins {
     id 'java'
 }
 
-group = 'qa.guru'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
-
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
@@ -23,11 +19,6 @@ def allureVersion = "2.16.1",
     junitVersion = "5.7.1",
     springfoxBootStarter = "3.0.0"
 
-jar {
-    manifest {
-        attributes 'Main-Class': 'qa.guru.restbackend.RestBackendApplication.java'
-    }
-}
 
 dependencies {
 
